@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(175, 47, 47, 0.3);
+}
+
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f5f5f5;
+    font-weight: 300;
+    line-height: 1.4em;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* 注册 登录共用样式*/
+#sign {
+    width: 460px;
+    margin: 0 auto;   
+}
+
+
+.sign-title {
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    font-size: 50px;
+    margin: 75px 0 80px 0;
+    font-weight: 100;
+}
+
+.sign-form {
+    background: #fff;
+    width: 100%;
+    padding-bottom: 20px; 
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+                0 8px 0 -3px #f6f6f6,
+                0 9px 1px -3px rgba(0, 0, 0, 0.2),
+                0 16px 0 -6px #f6f6f6,
+                0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+.sign-form div {
+    width: 380px;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #ededed;
+    position: relative;
+}
+
+.sign-form div input {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: medium;
+    color: #4d4d4d;
+    font-size: 16px;
+    text-indent: 35px;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+
+.sign-form div input::-webkit-input-placeholder {
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+.sign-form div input::-moz-placeholder {
+    font-weight: 300;
+   color: #e6e6e6;
+}
+
+.sign-form div input::input-placeholder {
+    font-weight: 300;
+   color: #e6e6e6;
+}
+
+.sign-form div a:hover {
+    color: rgba(175, 47, 47, 0.6)
+}
+
+.sign-form div img {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 20px;
+}
+
+.sign-form div button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: medium;
+    cursor: pointer;
+    background: rgba(175, 47, 47, .3);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sign-form div button:hover {
+    background: rgba(175, 47, 47, .6);
+}
+
+.sign-form div:nth-child(1) {
+    margin-top: 36px;
+}
+
+.sign-form div:last-child {
+    text-align: right;
+    font-size: 12px;
+    line-height: 40px;
+    border: none;
+}
+
+.warning {
+    position: absolute;
+    display: block;
+    height: 100%;
+    right: 5px;
+    top: 0;
+    color: rgba(175, 47, 47, .3);
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.prompt {
+    top: -45px;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+/* 注册私有 */
+
+.register div:nth-child(2) {
+    margin: 30px auto;
+}
+
+.register div:nth-child(4) {
+    margin-top: 40px;
+    border: none;
+}
+
+
+/* 登录私有 */
+
+.login div:nth-child(2) {
+    margin-top: 30px;
+}
+
+.login div:nth-child(3) {
+    margin-top: 40px;
+    border: none;
+}
+
+
+
+
