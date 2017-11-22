@@ -9,8 +9,8 @@ http://cloud.qingful.com
 
 1. 登录青否云
 2. 创建应用
-3. 导入sql
-5. 配置下appid，appkey
+3. 导入`./sql/todos.sql`到应用数据
+5. 配置下`./js/config.js`中的appid，appkey
 
 
 
