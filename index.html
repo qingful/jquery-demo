@@ -52,6 +52,7 @@
         {{#if completedTodos}}
         <button id="clear-completed">清除已完成</button>{{/if}}
     </script>
+    <script src="./js/config.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/handlebars.js"></script>
     <script src="./js/director.js"></script>
@@ -65,9 +66,7 @@
         });
 
 
-        var appId = '483738788631',
-            appKey = 'ueJfWmqQaYLNuw6xeA6PWRmr',
-            ESCAPE_KEY = 27,
+        var ESCAPE_KEY = 27,
             ENTER_KEY = 13;
 
         var App = {
