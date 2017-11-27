@@ -1,2 +1,3 @@
 var appId = "483738788631",
-	appKey = "ueJfWmqQaYLNuw6xeA6PWRmr";
+	appKey = "ueJfWmqQaYLNuw6xeA6PWRmr",
+	dev = 'true';
