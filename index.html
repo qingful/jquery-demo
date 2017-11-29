@@ -110,7 +110,10 @@
                     success: function(msg) {
                         that.todos = msg.data;
                     },
-                    error: function(err) {
+                    error: function(err) { 
+                        if (err.status == 401) {
+                            that.signOut();
+                        };
                         console.log('数据请求错误，请检查网络')
                     }
                 });
