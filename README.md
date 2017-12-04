@@ -9,8 +9,21 @@ http://cloud.qingful.com
 
 1. 登录青否云
 2. 创建应用
-3. 导入`./sql/todos.sql`到应用数据
-5. 配置下`./js/config.js`中的appid，appkey
+3. 数据设置。
+    - 创建数据表。
+        + 创建数据表`user`，引擎和校对默认即可。点击显示结构，添加字段`phone`，类型选择`bigint`，长度值为`11`，其余默认。添加字段`password`，类型选择`text`，其余默认。
+        + 创建数据表`todos`，引擎和校对默认即可。点击显示结构，添加字段`content`，类型选择`text`，其余默认。添加字段`user_id`，类型选择`int`，其余默认。添加字段`status`，类型选择`int`，其余默认。
+4. 权限设置。
+    - 创建密钥，名称`Authorization`，密钥随便设置。
+    - 创建分组，分别创建`public`和`home`分组。
+    - 组权限，创建`home`的组权限，并选择`Authorization`秘钥。
+    - 表权限。
+        + 创建`todos`表权限，选择`home`分组，选择`todos`数据表，权限勾选查询、新增、更新、删除，密钥选择为空。
+        + 创建`user`表权限，选择`public`分组，选择`user`数据表，权限勾选查询、新增，密钥选择为`Authorization`。
+    - 字段。
+        + 点击创建字段，选择`public`分组，`user`数据表，`password`字段，值为空，类型选择`md5`，传值选择是，请求链接选择为空。
+        + 点击创建字段，选择`home`分组，`todos`数据表，`user_id`字段，值为`Authorization.id`。类型为空，传值选择否，请求链接选择为空。
+5. 配置demo文件下的`./js/config.js`中的appid，appkey(青否云帐号应用下的设置中获取)
 
 
 
