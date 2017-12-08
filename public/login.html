@@ -32,7 +32,7 @@
         'use strict';
 
         var telReg = /^[1][3,4,5,7,8][0-9]{9}$/, //手机 验证
-            pwdReg = /^[a-zA-Z]\w{5,17}$/, //密码 验证		
+            pwdReg = /^[a-zA-Z]\w{5,17}$/, //密码 验证密码，以字母开头，长度在6~18之间，只能包含字符、数字和下划线   
             telChecked = false,
             pwdChecked = false;
 
@@ -78,10 +78,13 @@
                         'x-qingful-dev': dev
                     },
                     success: function(data) {
-
-                        localStorage.setItem('Authorization', data.data)
-                        // 跳转登录
-                        window.location.href = '../index.html'
+                        if(data.data){
+                            localStorage.setItem('Authorization', data.data);
+                            // 跳转登录
+                            window.location.href = '../index.html';
+                        }else{
+                            $('.prompt').css('display', 'block')
+                        }
                     },
                     error: function(err) {
                         $('.prompt').css('display', 'block')
